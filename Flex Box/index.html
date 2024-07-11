@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 20px;
+        height: 200px;
+        width: 400px;
+        background-color: grey;
+      }
+      .container p {
+        border: 1px solid black;
+        box-sizing: border-box;
+        background-color: pink;
+      }
+      span {
+        display: flex;
+        height: 40px;
+        background-color: pink;
+        justify-content: center;
+        align-items: center;
+      }
+      .flexclass {
+        display: flex;
+
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: row; */
+
+        /* justify-content: baseline; */
+        /* justify-content: first baseline; */
+        /* justify-content: last baseline; */
+        /* justify-content: end; */
+        /* justify-content: flex-end; */
+        /* justify-content: right; */
+        /* justify-content: flex-start; */
+        /* justify-content: start; */
+        /* justify-content: left; */
+        /* justify-content: stretch; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+
+        /* align-items: baseline; */
+        /* align-items: first baseline; */
+        /* align-items: last baseline; */
+        /* align-items: center; */
+        /* align-items: end; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: safe; */
+
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+      }
+      p:nth-child(2) {
+        /* height: 40px; */
+        /* align-self: center; */
+      }
+      p {
+        width: 120px;
+        align-self: center;
+        /* align-self: end; */
+      }
+    </style>
+  </head>
+  <body>
+    <span>Flex Box</span><!-- takes only text size-->
+    <!-- p tag takes full line of space.-->
+    <div class="container flexclass">
+      <p>My</p>
+      <p>name</p>
+      <p>is</p>
+      <p>ankit</p>
+    </div>
+  </body>
+</html>

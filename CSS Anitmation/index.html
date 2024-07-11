@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0 ;
+        }
+        .Btn{
+            margin: 20px;
+            background-color: pink;
+            color: black;
+            padding : 10px 20px ;
+            border: none;
+        }
+        .Btn:hover{
+            background-color: rgb(123, 123, 255);
+            border: 2px solid black;
+            /* font-size: 20px; */
+            transition: all ease-in-out 3s ;
+            transform: translate(60px, 0px) scaleY(1.5) rotatez(180deg);
+            /* scale: 1.5; */
+        }
+    </style>
+</head>
+<body>
+    <button class="Btn">hover me!</button>
+</body>
+</html>

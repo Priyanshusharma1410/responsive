@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 500px;
+            height: 600px;
+            background-color: pink;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            /* this animation can be added here but it add on box. animation will not start when you hover. */
+            animation-name: myanimation;
+            animation-duration: 5s; 
+            animation-iteration-count: infinite;
+        }
+        .box:hover{
+            /* this animation is apply when we hover on box. */
+            animation-play-state: paused;
+            /* transform: scale(0.5);
+            transition: 2s; */
+        }
+        @keyframes myanimation{
+            0%{
+                background-color: black;
+                transform: translate(0px, 0px);
+            }
+            20%{
+                background-color: white;
+                color: black;
+                transform: translate(400px, 500px);
+            }
+            40%{
+                background-color: black;
+                color: wheat;
+                transform: translate(0px, 500px);
+                
+            }
+            60%{
+                background-color: white;
+                color: black;
+                transform: translate(400px, 0px);
+                
+            }
+            80%{
+                background-color: black;
+                color: wheat;
+                transform: translate(0px, 0px);
+            } 
+            100%{
+                background-color: white;
+                color: black;
+                transform: translate(200px, 250px);
+            }
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            f
+        </div>
+    </div>
+    
+</body>
+</html>
